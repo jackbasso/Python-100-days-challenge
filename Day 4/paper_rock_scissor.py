@@ -39,12 +39,12 @@ print("Computer selection is:")
 print(selection[pc_selection])
 
 if human_selection == pc_selection:
-  print("PLAY AGAIN, IS A TIE")
+  print("PLAY AGAIN, IS A DRAW")
 elif human_selection == 0 and pc_selection == 2:
-  print("YOU WON")
+  print("YOU WIN")
 elif human_selection == 1 and pc_selection == 0:
-  print("YOU WON") 
+  print("YOU WIN") 
 elif human_selection == 2 and pc_selection == 1:
-  print("YOU WON")
+  print("YOU WIN")
 else:
-  print("YOU LOST")
+  print("YOU LOSE")
