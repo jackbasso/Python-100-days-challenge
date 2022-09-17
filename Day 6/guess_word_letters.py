@@ -13,17 +13,31 @@ for _ in chosen_word:
 	display += '_'
 
 print(display)
-guess = input("Guess a letter:  ").lower()
 
-#TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
-i = 0
+end = 0
+while end < 1:
+	guess = input("Guess a letter:  ").lower()
 
-result = []
-for char in chosen_word:
-	if guess == char:
-		result.append(guess)
-	else:
-		result.append("_")
-	i += 1
+	#TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+	i = 0
 
-print(result)
+	result = []
+	for char in chosen_word:
+		if guess == char:
+			result.append(guess)
+		else:
+			result.append("_")
+		i += 1
+
+	print(result)
+	print("SECOND OPTION: ")
+	for position in range(len(chosen_word)):
+		if guess == chosen_word[position]:
+			display[position] = guess
+
+	for blank in display:
+		if blank == "_":
+			end += 1
+
+	print(display)
+
