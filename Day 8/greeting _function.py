@@ -9,10 +9,10 @@ def greet():
 # Call the greet() function and run your code.
 
 
-def greet_name(name):
-    print(f"Hello {name}!")
-    print(f"Hello {name}, again!")
-    print(f"Hello {name}, again and again!")
+def greet_name(name, location):
+    print(f"Hello {name} from {location}!")
+    print(f"Hello {name}, again! how is {location}?")
+    print(f"Hello {name}, again and again! hey where is {location}?")
 
 greet()
-greet_name("Juana")
+greet_name("Juana Caruzzo", "Calgary")
